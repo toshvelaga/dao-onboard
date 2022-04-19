@@ -107,7 +107,6 @@ function Onboarding() {
     }
     API.post('/members', data)
       .then((res) => {
-        console.log(res)
         setCookie('onboarding', 'completed', 365)
         setCookie('id', res.data._id, 365)
         navigate('/members')
@@ -124,7 +123,6 @@ function Onboarding() {
       setStepIndex(stepIndex + 1)
     }
     if (stepIndex === 3) {
-      console.log('onboarding')
       handleSubmit()
     }
   }

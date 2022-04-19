@@ -1,3 +1,33 @@
 .settings-container {
   font-family: var(--main-font-light);
+  margin-left: 330px;
+  margin-top: 2rem;
+}
+
+.edit-settings {
+  width: 60%;
+  border: 1px solid gray;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .settings-container {
+    margin-left: 100px;
+  }
+
+  .edit-settings {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .settings-container {
+    margin-left: 0px;
+  }
+
+  .edit-settings {
+    width: 80%;
+    margin: 0 auto;
+  }
 }

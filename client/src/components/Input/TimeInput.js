@@ -7,10 +7,6 @@ const TimeInput = (props) => {
       <label className='time-input-label'>{props.label}</label>
       <input
         className='time-input'
-        style={{
-          padding: '.5rem',
-          fontSize: '20px',
-        }}
         type='time'
         id='appt'
         name='appt'

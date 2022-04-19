@@ -7,4 +7,6 @@
 .time-input {
   font-family: var(--main-font-light);
   border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 20px;
 }

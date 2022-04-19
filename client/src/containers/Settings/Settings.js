@@ -55,18 +55,8 @@ const Settings = () => {
   return (
     <>
       <Navbar />
-      <div
-        className='settings-container'
-        style={{ marginLeft: '330px', marginTop: '2rem' }}
-      >
-        <div
-          style={{
-            width: '60%',
-            border: '1px solid gray',
-            padding: '2rem',
-            borderRadius: '5px',
-          }}
-        >
+      <div className='settings-container'>
+        <div className='edit-settings'>
           <h1>Edit Settings</h1>
           <Input
             value={discordUsername}
