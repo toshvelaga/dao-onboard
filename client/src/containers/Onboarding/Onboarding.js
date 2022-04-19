@@ -134,7 +134,7 @@ function Onboarding() {
       setDiscordUsernameError('Discord username is required')
     }
     if (!status) {
-      setStatus('Add what you are currently working on')
+      setStatusError('Add what you are currently working on')
     }
     if (!role) {
       setRoleError('Role is required')

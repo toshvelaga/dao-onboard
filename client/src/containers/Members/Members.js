@@ -42,15 +42,18 @@ const Members = () => {
         <div
           style={{
             width: '85%',
-            border: '1px solid green',
-            margin: '0 auto',
-            padding: '1rem',
+            border: '1px solid grey',
+            borderRadius: '5px',
+            margin: '2rem auto',
+            padding: '2rem',
           }}
         >
           <h1>Members Directory</h1>
 
           <div style={{ display: 'flex' }}>
-            <h2 style={{ width: '35%', color: 'grey' }}>All Members: </h2>
+            <h2 style={{ width: '35%', color: 'grey' }}>
+              All Members: {membersData.length}
+            </h2>
             <Selected
               style={{ width: '20%', marginRight: '5rem' }}
               placeholder='Sort by...'
