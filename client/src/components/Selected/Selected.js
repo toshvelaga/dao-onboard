@@ -1,15 +1,21 @@
 import React from 'react'
 import Select from 'react-select'
+import styles from '../../styles/styles'
 import './Selected.css'
 
 // react-select: https://www.npmjs.com/package/react-select
 
 function Selected(props) {
   const customStyles = {
+    menu: (provided, state) => ({
+      ...provided,
+      color: 'black',
+    }),
     control: (base) => ({
       ...base,
       height: '3rem',
-      // border: '1px solid black',
+      background: props.background,
+      border: props.border,
     }),
   }
   return (
@@ -41,7 +47,7 @@ function Selected(props) {
             colors: {
               ...theme.colors,
               // primary25: "hotpink",
-              primary: '#121212',
+              primary: styles.blueFontColor,
             },
           })}
         />

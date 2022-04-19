@@ -50,7 +50,7 @@ const Members = () => {
           <h1>Members Directory</h1>
 
           <div style={{ display: 'flex' }}>
-            <h2 style={{ width: '35%' }}>All Members</h2>
+            <h2 style={{ width: '35%', color: 'grey' }}>All Members: </h2>
             <Selected
               style={{ width: '20%', marginRight: '5rem' }}
               placeholder='Sort by...'
@@ -60,6 +60,8 @@ const Members = () => {
                 console.log(e.value)
                 setSortedBy(e.value)
               }}
+              background={'transparent'}
+              border={'1px solid grey'}
             />
             <Selected
               // style={{ width: '20%', float: 'right' }}
@@ -70,6 +72,8 @@ const Members = () => {
                 console.log(e.value)
                 setFilteredRole(e.value)
               }}
+              background={'transparent'}
+              border={'1px solid grey'}
             />
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
