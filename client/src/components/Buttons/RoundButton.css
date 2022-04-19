@@ -14,5 +14,4 @@
 
 .round-button:hover {
   background-color: var(--light-blue-color);
-  cursor: pointer;
 }

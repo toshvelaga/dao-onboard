@@ -4,8 +4,6 @@ import RoundButton from '../Buttons/RoundButton'
 import './OnboardingFlow.css'
 
 const OnboardingFlow = (props) => {
-  // const steps = [1, 2, 3]
-
   return (
     <div className='flow-container'>
       <h2
@@ -18,7 +16,13 @@ const OnboardingFlow = (props) => {
       </h2>
       <div className='steps-container'>
         {props.steps.map((step) => {
-          return <RoundButton key={step} number={step} />
+          return (
+            <RoundButton
+              onClick={props.handleStepChange}
+              key={step.value}
+              number={step.label}
+            />
+          )
         })}
       </div>
       <h3

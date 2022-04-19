@@ -153,7 +153,11 @@ function Onboarding() {
   return (
     <div>
       <OnboardingFlow
-        steps={[check(1), check(2), check(3)]}
+        steps={[
+          { value: 1, label: check(1) },
+          { value: 2, label: check(2) },
+          { value: 3, label: check(3) },
+        ]}
         title={stepData[stepIndex].title}
         btnTitle={stepData[stepIndex].btnTitle}
         onClick={handleStepChange}
