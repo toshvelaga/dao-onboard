@@ -1,0 +1,14 @@
+.date-input-container {
+  margin-bottom: 1rem;
+}
+
+.date-input {
+  font-family: var(--main-font-light);
+  border-radius: 5px;
+}
+
+.date-input-label {
+  font-size: 16px;
+  display: block;
+  color: var(--grey-font-color);
+}

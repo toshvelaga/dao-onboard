@@ -1,0 +1,21 @@
+.flow-container {
+  width: 50%;
+  min-height: 80vh;
+  background-color: #252526;
+  margin: 2rem auto;
+  border-radius: 10px;
+  color: var(--grey-font-color);
+  padding: 1rem 2rem 0rem 2rem;
+  font-family: var(--main-font-light);
+  border: 1px solid grey;
+}
+
+.steps-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: var(--yellow-orange-color);
+}

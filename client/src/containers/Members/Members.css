@@ -1,0 +1,7 @@
+.members-container {
+  font-family: var(--main-font-light);
+}
+
+.member-details:hover {
+  background-color: var(--card-background-color);
+}

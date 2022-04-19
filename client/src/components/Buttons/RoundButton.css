@@ -1,0 +1,18 @@
+.round-button {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: var(--dark-blue-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin: 0 1.5rem;
+  border: none;
+}
+
+.round-button:hover {
+  background-color: var(--light-blue-color);
+  cursor: pointer;
+}
