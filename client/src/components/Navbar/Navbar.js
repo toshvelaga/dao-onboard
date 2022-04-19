@@ -11,7 +11,6 @@ function Navbar(props) {
     const updateWindowDimensions = () => {
       const newWidth = window.innerWidth
       setWidth(newWidth)
-      console.log('updating width')
     }
 
     window.addEventListener('resize', updateWindowDimensions)

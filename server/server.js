@@ -55,7 +55,6 @@ app.get('/api/members', (req, res) => {
 // get one member based on an ID from the database
 app.get('/api/member', (req, res) => {
   const { id } = req.query
-  console.log(id)
   Member.find({ _id: id })
     .then((members) => {
       res.send(members[0])
@@ -75,7 +74,6 @@ app.put('/api/member', (req, res) => {
     lastUpdated: new Date().valueOf(),
   })
     .then((res) => {
-      console.log(res)
       res.send('Member updated')
     })
     .catch((err) => {
