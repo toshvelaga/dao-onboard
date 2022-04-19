@@ -19,3 +19,11 @@
 .title {
   color: var(--yellow-orange-color);
 }
+
+@media screen and (max-width: 1000px) {
+  .flow-container {
+    margin-top: 4rem;
+    width: 80%;
+    min-height: 60vh;
+  }
+}
