@@ -38,46 +38,37 @@ const Members = () => {
     <>
       <Navbar />
 
-      <div className='members-container' style={{ marginLeft: '200px' }}>
-        <div
-          style={{
-            width: '85%',
-            border: '1px solid grey',
-            borderRadius: '5px',
-            margin: '2rem auto',
-            padding: '2rem',
-          }}
-        >
+      <div className='members-container'>
+        <div className='members-table'>
           <h1>Members Directory</h1>
-
-          <div style={{ display: 'flex' }}>
-            <h2 style={{ width: '35%', color: 'grey' }}>
-              All Members: {membersData.length}
-            </h2>
-            <Selected
-              style={{ width: '20%', marginRight: '5rem' }}
-              placeholder='Sort by...'
-              options={sortBy}
-              value={sortedBy.value}
-              onChange={(e) => {
-                console.log(e.value)
-                setSortedBy(e.value)
-              }}
-              background={'transparent'}
-              border={'1px solid grey'}
-            />
-            <Selected
-              // style={{ width: '20%', float: 'right' }}
-              placeholder='Filter by role...'
-              options={roles}
-              value={filteredRole.value}
-              onChange={(e) => {
-                console.log(e.value)
-                setFilteredRole(e.value)
-              }}
-              background={'transparent'}
-              border={'1px solid grey'}
-            />
+          <div className='members-select-container'>
+            <h2 className='members-title'>All Members: {membersData.length}</h2>
+            <div className='sort-by-selected'>
+              <Selected
+                placeholder='Sort by...'
+                options={sortBy}
+                value={sortedBy.value}
+                onChange={(e) => {
+                  console.log(e.value)
+                  setSortedBy(e.value)
+                }}
+                background={'transparent'}
+                border={'1px solid grey'}
+              />
+            </div>
+            <div>
+              <Selected
+                placeholder='Filter by role...'
+                options={roles}
+                value={filteredRole.value}
+                onChange={(e) => {
+                  console.log(e.value)
+                  setFilteredRole(e.value)
+                }}
+                background={'transparent'}
+                border={'1px solid grey'}
+              />
+            </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <p style={{ width: '35%' }}>Member details</p>
