@@ -10,6 +10,7 @@ import DateInput from '../../components/Input/DateInput'
 import TimeInput from '../../components/Input/TimeInput'
 import OnboardingIntro from '../../components/OnboardingFlow/OnboardingIntro'
 import currentDate from '../../utils/currentDate'
+import * as FaIcons from 'react-icons/fa'
 import './Onboarding.css'
 
 function Onboarding() {
@@ -143,10 +144,16 @@ function Onboarding() {
     }
   }
 
+  const check = (step) => {
+    if (step <= stepIndex) {
+      return <FaIcons.FaCheck />
+    } else return step
+  }
+
   return (
     <div>
       <OnboardingFlow
-        steps={[1, 2, 3]}
+        steps={[check(1), check(2), check(3)]}
         title={stepData[stepIndex].title}
         btnTitle={stepData[stepIndex].btnTitle}
         onClick={handleStepChange}

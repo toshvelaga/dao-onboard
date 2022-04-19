@@ -1,0 +1,8 @@
+.onboarding-links {
+  text-decoration: none; /* no underline */
+  color: grey;
+}
+
+.onboarding-links:hover {
+  color: var(--dark-blue-color);
+}
