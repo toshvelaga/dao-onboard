@@ -1,5 +1,7 @@
 # [Dao Directory](https://dao-onboard.netlify.app/)
 
+<img width="1315" alt="Screen Shot 2022-04-19 at 5 27 08 AM" src="https://user-images.githubusercontent.com/38474161/163993514-03dfd803-b707-427f-a289-0707896c72ad.png">
+
 A central directory of contributors for a DAO.
 
 ## Tech/framework used
