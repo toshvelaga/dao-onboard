@@ -14,7 +14,6 @@ const Members = () => {
   useEffect(() => {
     API.get('/members')
       .then((res) => {
-        console.log(res.data)
         setMembersData(res.data)
       })
       .catch((err) => {
@@ -49,7 +48,6 @@ const Members = () => {
                 options={sortBy}
                 value={sortedBy.value}
                 onChange={(e) => {
-                  console.log(e.value)
                   setSortedBy(e.value)
                 }}
                 background={'transparent'}
@@ -62,7 +60,6 @@ const Members = () => {
                 options={roles}
                 value={filteredRole.value}
                 onChange={(e) => {
-                  console.log(e.value)
                   setFilteredRole(e.value)
                 }}
                 background={'transparent'}

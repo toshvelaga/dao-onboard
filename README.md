@@ -18,6 +18,7 @@ Backend tech stack:
 - Node
 - Express
 - MongoDB
+- [Mongoose](https://mongoosejs.com/)
 
 Frontend is hosted on Netlify. Backend is hosted on AWS EC2 instance.
 
