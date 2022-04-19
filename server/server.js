@@ -19,6 +19,7 @@ mongoose
     console.log(err)
   })
 
+// add a new member to the database
 app.post('/api/members', (req, res) => {
   const { discordName, status, role, onboardDate, onboardTime } = req.body
   const date = new Date()
@@ -40,6 +41,7 @@ app.post('/api/members', (req, res) => {
     })
 })
 
+// get all the members from the database
 app.get('/api/members', (req, res) => {
   Member.find()
     .then((members) => {
@@ -50,6 +52,7 @@ app.get('/api/members', (req, res) => {
     })
 })
 
+// get one member based on an ID from the database
 app.get('/api/member', (req, res) => {
   const { id } = req.query
   console.log(id)
@@ -62,6 +65,7 @@ app.get('/api/member', (req, res) => {
     })
 })
 
+// edit one member based on an ID from the database
 app.put('/api/member', (req, res) => {
   const { id, discordName, status, role } = req.body
   Member.findByIdAndUpdate(id, {
