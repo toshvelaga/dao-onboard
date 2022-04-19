@@ -72,9 +72,9 @@ const Members = () => {
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <p style={{ width: '35%' }}>Member details</p>
-            <p style={{ width: '20%' }}>Discord name</p>
-            <p style={{ width: '20%' }}>Date joined</p>
-            <p style={{ width: '20%' }}>Role</p>
+            <p className='member-details-text'>Discord name</p>
+            <p className='member-details-text'>Date joined</p>
+            <p className='member-details-text'>Role</p>
           </div>
           <hr></hr>
           {sort(membersData)
@@ -90,9 +90,9 @@ const Members = () => {
                     style={{ display: 'flex', justifyContent: 'space-between' }}
                   >
                     <p style={{ width: '35%' }}>{member.status}</p>
-                    <p style={{ width: '20%' }}>{member.discordName}</p>
-                    <p style={{ width: '20%' }}>{member.dateJoined}</p>
-                    <div style={{ width: '20%' }}>
+                    <p className='member-details-text'>{member.discordName}</p>
+                    <p className='member-details-text'>{member.dateJoined}</p>
+                    <div className='member-details-text'>
                       <Role title={member.role} />
                     </div>
                   </div>
